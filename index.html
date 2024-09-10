@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container-main">
+        <div class="title">
+            <h1>To Do List</h1>
+        </div>
+
+        <div class="input-div">
+            <input type="text" id="id-inp" placeholder="Write your task">
+            <textarea id="id-notes" placeholder="Add notes..."></textarea>
+            <button id="id-btn" onclick="AddTask()">Add</button>
+        </div>
+
+        <p>Search a task</p>
+        <input type="text" id="id-serch" oninput="serchTask()">
+
+        <div class="tasks-list" id="taskList"></div>
+    </main>
+    <script src="script.js"></script>
+    
+</body>
+</html>
